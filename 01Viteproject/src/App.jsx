@@ -4,11 +4,12 @@ import Deep from './deep'
 
 
 function App() {
+  const username="deepak"
 
   return (
     <>
     <Deep/>
-    <h1>dadf</h1>
+    <h1>user:{username}</h1>
     </>
     
   )
