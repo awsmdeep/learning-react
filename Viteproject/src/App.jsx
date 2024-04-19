@@ -1,12 +1,16 @@
 
-
+import Deep from './deep'
 
 
 
 function App() {
 
   return (
-    <h1>hello world with vite </h1>
+    <>
+    <Deep/>
+    <h1>dadf</h1>
+    </>
+    
   )
 }
 
