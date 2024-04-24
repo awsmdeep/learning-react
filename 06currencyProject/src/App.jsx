@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // Importing React and useState from 'react'
-import InputBox from './components/InputBox'; // Importing the InputBox component
+import InputBox from './components/InputBox'// Importing the InputBox component
 import useCurrencyInfo from './hooks/usecurrencyinfo'; // Importing the custom hook useCurrencyInfo
 
 function App() {
