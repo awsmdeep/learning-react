@@ -1,4 +1,4 @@
-import conf from '../conf'; // Import configuration details from the conf file
+import conf from '../conf/conf'; // Import configuration details from the conf file
 import { Client, Account, ID } from "appwrite"; // Import necessary modules from the Appwrite SDK
 
 // AuthService class handles authentication-related operations
@@ -53,7 +53,7 @@ export class AuthService {
     // Method to log out the current user
     async logout() {
         try {
-            await this.account.deleteSession(); // Delete the current user session
+            await this.account.deleteSessions(); // Delete the current user session
         } catch (error) {
             throw error; // Throw error if logout fails
         }

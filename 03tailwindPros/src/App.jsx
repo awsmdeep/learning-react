@@ -35,10 +35,11 @@ function App() {
       </h1>
       
       {/* Rendering the 'Card' component with props */}
-      <Card channel={newobj} username="deepak" p="jabfhabfhafhaefhaefa" btntext="Click Me" />
+      <Card channel={newobj} username="deepak" p="jabfhabfhafhaefhaefa" btntext="click me" />
 
       {/* Rendering the 'Card' component with different props */}
       <Card newarr1={newarr} username="sam" p="safdjajnjfjkfbkjbfafbkfkbf" btntext="View Me" />
+      <Card newarr1={newarr} username="ankit" p="safdjajnjfjkfbkjbfafbkfkbf" btntext="View Me" />
     </>
   );
 }

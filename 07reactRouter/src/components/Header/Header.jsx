@@ -1,11 +1,17 @@
+// Importing necessary modules from React and react-router-dom
 import React from 'react'
-import {Link,NavLink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
+// Defining the functional component Header
 export default function Header() {
     return (
+        // Header section containing navigation
         <header className="shadow sticky z-50 top-0">
+            {/* Navigation bar */}
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+                {/* Container for navigation elements */}
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                    {/* Logo linking to home page */}
                     <Link to="/" className="flex items-center">
                         <img
                             src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
@@ -13,6 +19,7 @@ export default function Header() {
                             alt="Logo"
                         />
                     </Link>
+                    {/* Links for logging in and getting started */}
                     <div className="flex items-center lg:order-2">
                         <Link
                             to="#"
@@ -27,14 +34,17 @@ export default function Header() {
                             Get started
                         </Link>
                     </div>
+                    {/* Navigation menu for larger screens */}
                     <div
                         className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
                         id="mobile-menu-2"
                     >
+                        {/* List of navigation links */}
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                            {/* NavLink for Home page */}
                             <li>
                                 <NavLink
-                                to="/"
+                                    to="/"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -42,9 +52,10 @@ export default function Header() {
                                     Home
                                 </NavLink>
                             </li>
+                            {/* NavLink for About page */}
                             <li>
                                 <NavLink
-                                to='About'
+                                    to='About'
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -52,9 +63,10 @@ export default function Header() {
                                     About
                                 </NavLink>
                             </li>
+                            {/* NavLink for Contact page */}
                             <li>
                                 <NavLink
-                                to='Contact'
+                                    to='Contact'
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -62,9 +74,10 @@ export default function Header() {
                                     Contact
                                 </NavLink>
                             </li>
+                            {/* NavLink for Github page */}
                             <li>
                                 <NavLink
-                                to='github'
+                                    to='github'
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }   
@@ -72,8 +85,6 @@ export default function Header() {
                                     Github
                                 </NavLink>
                             </li>
-                            
-                            
                         </ul>
                     </div>
                 </div>
@@ -81,4 +92,3 @@ export default function Header() {
         </header>
     );
 }
-
